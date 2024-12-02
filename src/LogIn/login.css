@@ -23,6 +23,9 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     flex-direction: column;
+    transition: width 0.3s ease-out, transform 0.3s ease-out;
+    
+    
 }
 
 .LoginLeftSide h1 {
@@ -59,7 +62,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     border: none;
     border-radius: 20px;
     margin-top: 30px;
-    margin-left:30%;
+    margin-left:40%;
     align-self: center;
 }
 
@@ -76,7 +79,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     justify-content: center; 
     padding: 20px; 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Added transition */
     background-color: #389acf;
 }
 
@@ -108,10 +111,12 @@ input[type="email"]:focus, input[type="password"]:focus {
     color: #389acf;
     font-size: 10px;
     align-content: center;
-    margin: 20px;
+    
     display: none;
     text-align: center; 
     margin-top: 20px; 
+    margin-left:10%;
+    align-self: center;
 }
 .CreateAccountLinkMediaQ:hover{
     color: #183341;
@@ -121,11 +126,20 @@ input[type="email"]:focus, input[type="password"]:focus {
 /*right side disappears so only white side shows*/
 @media screen and (max-width: 900px) {
     .CreateAccounRightSide {
-        display: none;
+        transform: translateX(100%); /* Move off-screen to the left */
+        opacity: 0; /* Fade out */
     }
-    .CreateAccountLinkMediaQ{
+    
+    .CreateAccountLinkMediaQ {
         display: block;
     }
 
-    
+    .Container {
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .LoginLeftSide {
+        width: 70%; /* Occupy the space left by the removed right side */
+        transform: translateX(30%); /* Stay centered */
+    }
 }
