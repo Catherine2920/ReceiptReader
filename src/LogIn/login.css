@@ -9,6 +9,7 @@ body {
     align-items: center;
     width: 100%; 
     height: 90vh;
+    
 }
 
 /* LEFT SIDE */
@@ -21,6 +22,7 @@ body {
     padding: 20px; 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+    flex-direction: column;
 }
 
 .LoginLeftSide h1 {
@@ -51,7 +53,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .sign-In-button {
     background-color: #389acf; 
-    width: 25%;
+    width: 100px;
     height: 35px; 
     color: #ffffff;
     border: none;
@@ -80,6 +82,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .CreateAccounRightSide h1{
     color:#ffffff;
+    text-align: center; 
     align-self: center;
 }
 
@@ -98,4 +101,31 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .sign-up-button:hover{
     background-color: #c3c4d5;
+   
+}
+
+.CreateAccountLinkMediaQ{
+    color: #389acf;
+    font-size: 10px;
+    align-content: center;
+    margin: 20px;
+    display: none;
+    text-align: center; 
+    margin-top: 20px; 
+}
+.CreateAccountLinkMediaQ:hover{
+    color: #183341;
+}
+
+/* MEDIA QUERIES */
+/*right side disappears so only white side shows*/
+@media screen and (max-width: 900px) {
+    .CreateAccounRightSide {
+        display: none;
+    }
+    .CreateAccountLinkMediaQ{
+        display: block;
+    }
+
+    
 }
