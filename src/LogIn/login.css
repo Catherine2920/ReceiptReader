@@ -1,0 +1,101 @@
+body {
+    background-color: #e8f6ff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 90vh;
+}
+
+/* LEFT SIDE */
+.LoginLeftSide {
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.LoginLeftSide h1 {
+    color: #389acf;
+    margin-left: 40px;
+}
+
+input[type="email"], input[type="password"] {
+    border: none; 
+    border-bottom: 2px solid #389acf; 
+    background-color: transparent; 
+    border-radius: 0; 
+    padding: 10px 0; 
+    width: 70%; 
+    box-sizing: border-box;
+    margin-left: 40px; 
+    margin-top: 30px; 
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+    color: #6d7375; 
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    outline: none; 
+    border-bottom: 3px solid #456e84; 
+}
+
+.sign-In-button {
+    background-color: #389acf; 
+    width: 25%;
+    height: 35px; 
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left:30%;
+    align-self: center;
+}
+
+.sign-In-button:hover {
+    background-color: #1e3e50; 
+}
+
+/* RIGHT SIDE */
+.CreateAccounRightSide {
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    
+    background-color: #389acf;
+}
+
+.CreateAccounRightSide h1{
+    color:#ffffff;
+    align-self: center;
+}
+
+.sign-up-button {
+    border: none;
+    color: #389acf;
+    background-color: #ffffff;
+    width: 25%;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left:35%;
+    align-self: center;
+
+}
+
+.sign-up-button:hover{
+    background-color: #c3c4d5;
+}
