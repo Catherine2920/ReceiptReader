@@ -1,0 +1,56 @@
+body {
+    background-color: #e8f6ff;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; /* Prevent scrollbar */
+}
+
+.Container {
+    width: 400px;
+    height: 540px;
+   
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.Container h1{
+    color: #389acf;
+    text-align: center;
+}
+
+
+input[type="email"], input[type="password"], input[type="text"] {
+    border: none; 
+    border-bottom: 2px solid #389acf; 
+    background-color: transparent; 
+    border-radius: 0; 
+    padding: 10px 0; 
+    width: 70%; 
+    box-sizing: border-box;
+    margin-left: 40px; 
+    margin-top: 20px; 
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: #6d7375; 
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    outline: none; 
+    border-bottom: 3px solid #456e84; 
+}
+
+.create-button{
+    background-color: #389acf; 
+    width: 100px;
+    height: 35px; 
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left:40%;
+    align-self: center;
+}
