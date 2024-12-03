@@ -10,24 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
- 
 
-    <div class ="navBar">
+    <div class="navBar">
         <h1>Receipt Reader</h1>
         <nav class="menu" id="menu">
-            <a href="#" id = 'myAccount'>My Account</a>
+            <a href="#" id="myAccount">My Account</a>
             <a href="#">My Stats</a>
-            <a href="#">Recipts</a>
-            <a href="#" id = 'myTasks'>Add + </a>
-          </nav>
+            <a href="#">Receipts</a>
+            <a href="#" id="myTasks">Add +</a>
+        </nav>
     </div>
 
-   
-<!-- <button class ="UploadImage"> + </button> -->
- 
-    <footer>
-        
-    </footer>
+    <!-- Hidden File Input for Upload -->
+    <input type="file" id="imageUpload" class="hidden" accept="image/*">
+    <div id="preview"></div>
+
+    <!-- Dynamic Work Space -->
+    <div class="dynamicWorkSpace"></div>
+
+    <footer></footer>
 
     <script src="Index.js"></script>
 </body>

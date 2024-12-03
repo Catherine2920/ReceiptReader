@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -7,36 +6,40 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.container {
+    display: flex;
+}
+
 .navBar {
-    position: fixed; /* Sticks the navBar to the side */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 200px; /* Adjust as per your preference */
-    height: 100vh; /* Full height of the viewport */
-    background-color: #2c3e50; /* Dark background color */
-    color: white; /* Text color */
+    width: 200px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
 }
 
 .navBar h1 {
     margin: 0;
-    margin-bottom: 20px; /* Adds space between the heading and nav links */
+    margin-bottom: 20px;
     font-size: 24px;
     text-align: left;
 }
 
 .menu {
     display: flex;
-    flex-direction: column; /* Vertically align the menu items */
-    width: 100%; /* Take full width of the navBar */
+    flex-direction: column;
+    width: 100%;
 }
 
 .menu a {
     text-decoration: none;
-    color: white; /* Link color */
+    color: white;
     padding: 10px 15px;
     margin: 5px 0;
     border-radius: 5px;
@@ -44,20 +47,18 @@ body {
 }
 
 .menu a:hover {
-    background-color: #34495e; /* Change color on hover */
-}
-/*.UploadImage{
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    background-color:#389acf ;
-    color: #ffffff;
-    border: none;
+    background-color: #34495e;
 }
 
-.UploadImage:hover{
-  
-    background-color:#2f5265 ;
-   
-}*/
+/* WORKSPACE */
+
+.dynamicWorkSpace {
+    margin-left: 200px; /* Add space for the fixed navigation bar */
+    
+    background-color: #526578; /* Set the background color to red */
+    padding: 10px; /* Reduced padding */
+    width: 82%; /* Set width to 60% of the container */
+    height: 580px; /* Set a fixed height for the workspace */
+    box-sizing: border-box; /* Ensure padding is included in the height/width */
+    overflow: auto; /* Allow scrolling if the content exceeds the size */
+}
